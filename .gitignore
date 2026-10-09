@@ -1,0 +1,31 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Temporary files
+*.tmp
+*.log
+
+# Publish output
+publish/
+
+# Windows files
+Thumbs.db
+desktop.ini
+
+# Local configuration files - may contain database credentials
+**/App.config
+**/App.config.*
+
+!**/App.config.example
