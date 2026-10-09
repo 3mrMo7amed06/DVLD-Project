@@ -44,50 +44,37 @@ Manage detained licenses.
 Release detained licenses.
 Track license release information.
 📸 Screenshots
-🏠 Dashboard https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/dashboard.png
-
+ 
+![Dashboard](dashboard.png)
+![Login](login.png)
+![Manage-People](manage-people.png)
+![manage-users](manage-users.png)
+![local-applications](local-applications.png)
+![issue-license](issue-license.png)
+![international-license](international-license.png)
+![detain-license](detain-license.png)
+![release-license](release-license.png)
   
-🔐 Login  https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/login.png
+ 
 
 
 
-
-👤 Manage People https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/manage-people.png
-
-
-
-
-👨‍💼 Manage Users  https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/manage-users.png
-
-
-
-
-📝 Local Driving License Applications  https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/local-applications.png
-
-
-
-
-🚘 Issue Driving License  https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/issue-license.png
-
-
-
-
-🌍 International Driving License https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/international-license.png
-
-
-
-
-🔒 Detain License https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/detain-license.png
-
-
-
-
-🔓 Release License  https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/release-license.png
+ 
 
 
 
 
  
+
+
+
+
+ 
+
+
+
+
+  
 
 The application follows a 3-Layer Architecture to separate responsibilities and make the code easier to maintain.
 
