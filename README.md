@@ -46,9 +46,7 @@ Track license release information.
 📸 Screenshots
 🏠 Dashboard https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/dashboard.png
 
-![Login Screenshot]([https://raw.githubusercontent.com/3mrMo7amed06/DVLD-Project/master/Screenshots/login.png](https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/login.png))
-
-
+  
 🔐 Login  https://github.com/3mrMo7amed06/DVLD-Project/blob/master/Screenshots/login.png
 
 
