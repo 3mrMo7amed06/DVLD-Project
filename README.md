@@ -1,114 +1,244 @@
-DVLD — Driving \& Vehicle License Department
+DVLD - Driving & Vehicle License Department
 
+A desktop application for managing driving license operations, applications, tests, drivers, users, and license-related processes.
 
+The project was built using C# Windows Forms, SQL Server, ADO.NET, and a 3-Layer Architecture to separate the presentation, business, and data access logic.
 
-A desktop application for managing driving license services, applications, and driver records.
+📌 About the Project
 
+DVLD is a desktop management system designed to simulate the core operations of a Driving & Vehicle License Department.
 
+The system manages people, drivers, users, applications, driving licenses, tests, international licenses, and detained/released licenses.
 
-Overview
+The project focuses on applying practical software development concepts such as:
 
-
-
-DVLD is a C# Windows Forms application built to organize driving license department operations. The project follows a three-layer architecture to separate the presentation, business logic, and data access responsibilities.
-
-
-
-Technologies Used
-
-C#
-
-Windows Forms (WinForms)
-
-.NET Framework 4.7.2
-
-Microsoft SQL Server
-
+Object-Oriented Programming
+3-Layer Architecture
+Database Design
 ADO.NET
+CRUD Operations
+Business Logic Separation
+Reusable Windows Forms UserControls
+SQL Server Database Integration
+✨ Features
+👤 People Management
+Add new people
+Edit person information
+Delete people
+Search and filter people
+View person details
+Manage nationality information
+👨‍💼 Users & Drivers
+Manage system users
+Add and edit users
+Change password
+View user details
+Manage drivers
+View driver information
+📝 Applications
+Manage application types
+Create Local Driving License Applications
+Manage Local Driving License Applications
+Create International Driving License Applications
+Manage International Licenses
+🚗 Driving Licenses
+Issue driving licenses
+Renew driving licenses
+Replace lost licenses
+Replace damaged licenses
+View license information
+View driver's license history
+🧪 Tests & Appointments
+Manage test types
+Schedule test appointments
+Vision tests
+Written tests
+Street tests
+Record test results
+Handle retake test applications
+🔒 Detained Licenses
+Detain a driving license
+Manage detained licenses
+Release detained licenses
+Track release information
+🏗️ Architecture
 
-SQL
+The application follows a 3-Layer Architecture:
 
-Architecture
+┌─────────────────────────────┐
+│      Presentation Layer     │
+│   WinForms + UserControls   │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│        Business Layer       │
+│       Business Logic        │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│      Data Access Layer      │
+│          ADO.NET            │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│          SQL Server         │
+└─────────────────────────────┘
 
+Presentation Layer
 
+Contains:
 
-The solution is organized into three main layers:
+Windows Forms
+UserControls
+UI logic
+User interaction
+Business Layer
 
+Contains the application's business logic and entities, including classes such as:
 
+clsPerson
+clsUser
+clsDriver
+clsApplication
+clsLicense
+clsTest
+clsTestAppointment
+clsInternationalLicense
+clsDetainedLicense
+Data Access Layer
 
-Presentation Layer (DVLD) — Windows Forms user interface and application screens.
+Handles communication with SQL Server using ADO.NET.
 
-Business Layer (DVLD.Business) — Business rules, validation, and application logic.
+Examples include:
 
-Data Access Layer (DVLD.DataAccess) — Database queries and data operations.
+clsPersonData
+clsUserData
+clsDriverData
+clsApplicationData
+clsLicenseData
+clsTestData
+clsTestAppointmentData
+clsInternationalLicenseData
+clsDetainedLicenseData
+🛠️ Technologies
+C#
+Windows Forms
+.NET
+SQL Server
+ADO.NET
+Visual Studio
+3-Layer Architecture
+🗄️ Database
 
-Main Features
+The application uses Microsoft SQL Server as its database management system.
 
-People management
+The database stores and manages information related to:
 
-Driver management
+People
+Countries
+Users
+Drivers
+Applications
+Application Types
+License Classes
+Licenses
+Tests
+Test Appointments
+International Licenses
+Detained Licenses
+📂 Project Structure
+DVLD
+│
+├── Forms
+│   ├── Main
+│   ├── Applications
+│   ├── Tests
+│   ├── People
+│   └── Users
+│
+├── UserControls
+│   ├── Applications
+│   ├── Licenses
+│   ├── People
+│   ├── Users
+│   └── Tests
+│
+├── Business
+│
+└── DataAccess
 
-Local driving license applications
+📸 Screenshots
+Main Dashboard
 
-License information and eligibility validation
+Screenshot coming soon.
 
-International driving license applications
+Manage People
 
-International driving license records
+Screenshot coming soon.
 
-Application and license data management
+Manage Users
 
-Project Structure
+Screenshot coming soon.
 
-DVLD Project/
+Local Driving License Applications
 
-├── DVLD/
+Screenshot coming soon.
 
-├── DVLD.Business/
+Tests & Appointments
 
-├── DVLD.DataAccess/
+Screenshot coming soon.
 
-├── DVLD\_Image/
+Issue Driving License
 
-├── .gitignore
+Screenshot coming soon.
 
-└── README.md
+International Driving License
 
-Requirements
+Screenshot coming soon.
 
-Windows
+Detain & Release License
 
-Visual Studio with .NET Framework 4.7.2 development support
+Screenshot coming soon.
 
-Microsoft SQL Server
+🎥 Demo
 
-A configured DVLD database
+A short walkthrough demonstrating the main workflows of the DVLD system.
 
+Demo video coming soon.
+
+🚀 How to Run
+Prerequisites
+Visual Studio
+SQL Server
+SQL Server Management Studio
 Setup
+Clone the repository.
+Open the solution in Visual Studio.
+Restore or create the DVLD database.
+Configure the SQL Server connection.
+Build the solution.
+Run the application.
 
-Clone or download this repository.
+Database setup details will be added with the project database/scripts.
 
-Open DVLD/DVLD.slnx in Visual Studio.
+🎯 Project Goals
 
-Configure your SQL Server connection string in your local App.config.
+This project was built to practice and apply:
 
-Make sure the required DVLD database and tables exist.
+C# and Object-Oriented Programming
+Windows Forms development
+SQL Server database development
+ADO.NET
+Multi-layer application architecture
+Database-driven application design
+Reusable UserControls
+Business logic separation
+Real-world CRUD workflows
+👨‍💻 Author
 
-Build the solution and run the application.
+Amr Mohamed
 
-
-
-Configuration note: App.config.example is provided as a template. Create or configure your local App.config using your own database settings. Do not commit real passwords or other sensitive credentials.
-
-
-
-Purpose
-
-
-
-This project demonstrates practical experience with C#, Windows Forms, SQL Server, database access, layered architecture, and building a multi-form desktop application.
-
-
-
-Status: Ongoing learning project.
-
+Computer Science Student
