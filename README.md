@@ -1,103 +1,128 @@
-DVLD - Driving & Vehicle License Department
+🚗 DVLD - Driving & Vehicle License Department
 
 A desktop application for managing driving license operations, applications, tests, drivers, users, and license-related processes.
 
-The project was built using C# Windows Forms, SQL Server, ADO.NET, and a 3-Layer Architecture to separate the presentation, business, and data access logic.
+Built with C# Windows Forms, SQL Server, ADO.NET, and a 3-Layer Architecture, this project demonstrates practical software development and database management concepts.
 
 📌 About the Project
 
 DVLD is a desktop management system designed to simulate the core operations of a Driving & Vehicle License Department.
 
-The system manages people, drivers, users, applications, driving licenses, tests, international licenses, and detained/released licenses.
+The system manages people, users, drivers, applications, driving licenses, test appointments, international licenses, and detained or released licenses.
 
-The project focuses on applying practical software development concepts such as:
+The project focuses on applying Object-Oriented Programming, database design, business logic separation, and reusable Windows Forms components in a real-world-style application.
 
-Object-Oriented Programming
-3-Layer Architecture
-Database Design
-ADO.NET
-CRUD Operations
-Business Logic Separation
-Reusable Windows Forms UserControls
-SQL Server Database Integration
 ✨ Features
 👤 People Management
-Add new people
-Edit person information
-Delete people
-Search and filter people
-View person details
-Manage nationality information
+Add, edit, delete, and search for people.
+View detailed person information.
+Manage nationality information.
 👨‍💼 Users & Drivers
-Manage system users
-Add and edit users
-Change password
-View user details
-Manage drivers
-View driver information
+Manage system users and drivers.
+Add and edit user information.
+Change user passwords.
+View user and driver details.
 📝 Applications
-Manage application types
-Create Local Driving License Applications
-Manage Local Driving License Applications
-Create International Driving License Applications
-Manage International Licenses
-🚗 Driving Licenses
-Issue driving licenses
-Renew driving licenses
-Replace lost licenses
-Replace damaged licenses
-View license information
-View driver's license history
+Manage application types.
+Create and manage Local Driving License Applications.
+Create International Driving License Applications.
+Manage international license records.
+🚘 Driving Licenses
+Issue driving licenses.
+Renew driving licenses.
+Replace lost or damaged licenses.
+View license information and driving license history.
 🧪 Tests & Appointments
-Manage test types
-Schedule test appointments
-Vision tests
-Written tests
-Street tests
-Record test results
-Handle retake test applications
+Manage test types.
+Schedule test appointments.
+Handle vision, written, and street tests.
+Record test results.
+Handle retake test applications.
 🔒 Detained Licenses
-Detain a driving license
-Manage detained licenses
-Release detained licenses
-Track release information
+Detain driving licenses.
+Manage detained licenses.
+Release detained licenses.
+Track license release information.
+📸 Screenshots
+🏠 Dashboard
+
+
+
+
+🔐 Login
+
+
+
+
+👤 Manage People
+
+
+
+
+👨‍💼 Manage Users
+
+
+
+
+📝 Local Driving License Applications
+
+
+
+
+🚘 Issue Driving License
+
+
+
+
+🌍 International Driving License
+
+
+
+
+🔒 Detain License
+
+
+
+
+🔓 Release License
+
+
+
+
 🏗️ Architecture
 
-The application follows a 3-Layer Architecture:
+The application follows a 3-Layer Architecture to separate responsibilities and make the code easier to maintain.
 
-┌─────────────────────────────┐
-│      Presentation Layer     │
-│   WinForms + UserControls   │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│        Business Layer       │
-│       Business Logic        │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│      Data Access Layer      │
-│          ADO.NET            │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│          SQL Server         │
-└─────────────────────────────┘
-
+┌──────────────────────────────────┐
+│       Presentation Layer         │
+│    Windows Forms + UserControls  │
+└────────────────┬─────────────────┘
+                 │
+                 ▼
+┌──────────────────────────────────┐
+│          Business Layer          │
+│       Business Logic & Rules     │
+└────────────────┬─────────────────┘
+                 │
+                 ▼
+┌──────────────────────────────────┐
+│        Data Access Layer         │
+│             ADO.NET              │
+└────────────────┬─────────────────┘
+                 │
+                 ▼
+┌──────────────────────────────────┐
+│           SQL Server             │
+└──────────────────────────────────┘
 Presentation Layer
 
-Contains:
+Responsible for the user interface and user interaction, including Windows Forms and reusable UserControls.
 
-Windows Forms
-UserControls
-UI logic
-User interaction
 Business Layer
 
-Contains the application's business logic and entities, including classes such as:
+Contains business entities, application logic, and validation rules.
+
+Examples:
 
 clsPerson
 clsUser
@@ -110,9 +135,9 @@ clsInternationalLicense
 clsDetainedLicense
 Data Access Layer
 
-Handles communication with SQL Server using ADO.NET.
+Handles database operations and communication with SQL Server using ADO.NET.
 
-Examples include:
+Examples:
 
 clsPersonData
 clsUserData
@@ -127,118 +152,87 @@ clsDetainedLicenseData
 C#
 Windows Forms
 .NET
-SQL Server
+Microsoft SQL Server
 ADO.NET
 Visual Studio
+Object-Oriented Programming (OOP)
 3-Layer Architecture
 🗄️ Database
 
-The application uses Microsoft SQL Server as its database management system.
+The application uses Microsoft SQL Server to store and manage data related to:
 
-The database stores and manages information related to:
+People and countries
+Users and drivers
+Applications and application types
+License classes and driving licenses
+Tests and test appointments
+International licenses
+Detained licenses
 
-People
-Countries
-Users
-Drivers
-Applications
-Application Types
-License Classes
-Licenses
-Tests
-Test Appointments
-International Licenses
-Detained Licenses
+The application accesses the database through the Data Access Layer using ADO.NET.
+
 📂 Project Structure
-DVLD
+DVLD Project/
 │
-├── Forms
-│   ├── Main
-│   ├── Applications
-│   ├── Tests
-│   ├── People
-│   └── Users
+├── DVLD/
+│   ├── Forms/
+│   ├── UserControls/
+│   ├── Properties/
+│   ├── Resources/
+│   ├── App.config.example
+│   └── DVLD.slnx
 │
-├── UserControls
-│   ├── Applications
-│   ├── Licenses
-│   ├── People
-│   ├── Users
-│   └── Tests
+├── DVLD.Business/
 │
-├── Business
+├── DVLD.DataAccess/
 │
-└── DataAccess
-
-📸 Screenshots
-Main Dashboard
-
-Screenshot coming soon.
-
-Manage People
-
-Screenshot coming soon.
-
-Manage Users
-
-Screenshot coming soon.
-
-Local Driving License Applications
-
-Screenshot coming soon.
-
-Tests & Appointments
-
-Screenshot coming soon.
-
-Issue Driving License
-
-Screenshot coming soon.
-
-International Driving License
-
-Screenshot coming soon.
-
-Detain & Release License
-
-Screenshot coming soon.
-
-🎥 Demo
-
-A short walkthrough demonstrating the main workflows of the DVLD system.
-
-Demo video coming soon.
-
+├── DVLD_Image/
+│
+├── Screenshots/
+│
+├── .gitignore
+└── README.md
 🚀 How to Run
 Prerequisites
 Visual Studio
-SQL Server
-SQL Server Management Studio
+Microsoft SQL Server
+SQL Server Management Studio (SSMS)
 Setup
-Clone the repository.
-Open the solution in Visual Studio.
-Restore or create the DVLD database.
-Configure the SQL Server connection.
+Clone or download this repository.
+Open DVLD/DVLD.slnx in Visual Studio.
+Create or restore the required DVLD database.
+Configure the SQL Server connection string in your local App.config.
 Build the solution.
 Run the application.
+Database Configuration
 
-Database setup details will be added with the project database/scripts.
+The repository includes App.config.example as a configuration template.
+
+Configure your own local connection string before running the application. Do not commit real database credentials or passwords to GitHub.
+
+Note: Database setup scripts or a database backup should be provided separately if you want others to reproduce the complete database locally.
 
 🎯 Project Goals
 
-This project was built to practice and apply:
+This project was developed to practice and apply:
 
 C# and Object-Oriented Programming
-Windows Forms development
-SQL Server database development
-ADO.NET
-Multi-layer application architecture
-Database-driven application design
-Reusable UserControls
+Windows Forms application development
+SQL Server database design and integration
+ADO.NET data access
+Multi-layer software architecture
+CRUD operations
 Business logic separation
-Real-world CRUD workflows
+Reusable UserControls
+Database-driven application workflows
+🎥 Demo
+
+A video demonstration of the main application workflows will be added in the future.
+
 👨‍💻 Author
 
 Amr Mohamed
 
 Computer Science Student
+
+GitHub: @3mrMo7amed06
