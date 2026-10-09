@@ -45,15 +45,15 @@ Release detained licenses.
 Track license release information.
 📸 Screenshots
  
-![Dashboard](dashboard.png)
-![Login](login.png)
-![Manage-People](manage-people.png)
-![manage-users](manage-users.png)
-![local-applications](local-applications.png)
-![issue-license](issue-license.png)
-![international-license](international-license.png)
-![detain-license](detain-license.png)
-![release-license](release-license.png)
+![Dashboard](Screenshots/dashboard.png)
+![Login](Screenshots/login.png)
+![Manage-People](Screenshots/manage-people.png)
+![manage-users](Screenshots/manage-users.png)
+![local-applications](Screenshots/local-applications.png)
+![issue-license](Screenshots/issue-license.png)
+![international-license](Screenshots/international-license.png)
+![detain-license](Screenshots/detain-license.png)
+![release-license](Screenshots/release-license.png)
   
  
 
